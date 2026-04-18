@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Programm3",
+            "request": "launch",
+            "mainClass": "Array.Programm3",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Programm5",
+            "request": "launch",
+            "mainClass": "Array.Programm5",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Programm6",
+            "request": "launch",
+            "mainClass": "Array.Programm6",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Debug Programm6",
+            "request": "launch",
+            "mainClass": "Array.Programm6",
+            "projectName": "DSA"
+        }
+    ]
+}
