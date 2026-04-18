@@ -24,10 +24,10 @@ public class Test {
                 System.out.print(i + " ");
             }
         }
-
+        sc.close();
         return arr;
     }
-
+    
     public static void main(String[] args) {
         // Call the helper method from main.
         readArrayAndPrintEvenNumbers();
