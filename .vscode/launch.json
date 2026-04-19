@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Questiion",
+            "request": "launch",
+            "mainClass": "Array.Questiion",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Question",
+            "request": "launch",
+            "mainClass": "Array.Question",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Questions",
+            "request": "launch",
+            "mainClass": "Array.Questions",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
             "name": "Programm3",
             "request": "launch",
             "mainClass": "Array.Programm3",
