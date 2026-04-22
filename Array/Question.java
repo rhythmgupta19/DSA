@@ -1,9 +1,6 @@
 package Array;
 //Qn1. Create an integer array of size 5 and take input from the user.
 
-import java.lang.classfile.attribute.SourceIDAttribute;
-
-import javax.sound.sampled.SourceDataLine;
 
 // import java.util.Scanner;
 // public class Questions {
@@ -380,7 +377,7 @@ import javax.sound.sampled.SourceDataLine;
 //     }
 // }
 
-// Qn21. Copy elelments from one array to another and displau both.
+// Qn21. Copy elelments from one array to another and display both.
 
 // public class Question{
 //     public static void main(String[] args) {
