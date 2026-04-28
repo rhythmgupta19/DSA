@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Programm10",
+            "request": "launch",
+            "mainClass": "Array.Programm10",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Programm9",
+            "request": "launch",
+            "mainClass": "Array.Programm9",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Programm8",
+            "request": "launch",
+            "mainClass": "Array.Programm8",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "Programm7",
+            "request": "launch",
+            "mainClass": "Array.Programm7",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
             "name": "Programm4",
             "request": "launch",
             "mainClass": "Array.Programm4",
