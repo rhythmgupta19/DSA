@@ -2,6 +2,7 @@ package Array;
 //Qn1. Create an integer array of size 5 and take input from the user.
 
 import java.lang.classfile.attribute.StackMapFrameInfo.VerificationTypeInfo;
+import java.net.SocketTimeoutException;
 
 // import java.util.Scanner;
 // public class Questions {
@@ -600,3 +601,151 @@ import java.lang.classfile.attribute.StackMapFrameInfo.VerificationTypeInfo;
 //     }
 // }
 
+// Qn29. WAP to print minimum element from the array.
+
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[]  = {2,3,4,5,6,7,8,9};
+
+//         int min = Integer.MAX_VALUE;
+//         for(int i :arr){
+//             if(i < min){
+//                 min = i;
+//             }
+//         }
+//         System.out.println("Minimum is "+ min);
+//     }
+// }
+
+// Qn30. WAP to find largest number in the array.
+
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {23,43,54,65,76,87,98};
+//         int max = Integer.MIN_VALUE;
+        
+//         for(int i:arr){
+//             if(i > max){
+//                 max = i;
+//             }
+//         }
+//         System.out.println("Maximum is " + max);
+//     }
+// }
+
+// Qn31. WAP t find second maximum number in array.
+
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {34,24,35,65,76,667,879};
+
+//         int max = Integer.MIN_VALUE;
+//         int Smax = Integer.MIN_VALUE;
+
+//         for(int i:arr){
+//             if(i > max){
+//                 Smax = max;
+//                 max  = i;
+//             }
+//             else if(i > Smax && i != max){
+//                 Smax = i;
+//             }
+//         }
+//         System.out.println("Second maximum is " + Smax);
+//     }
+// }
+
+// Qn32. WAP t find second minimum number in array.
+
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {23,34,53,5,433,3,33,5323,43,};
+
+//         int min = Integer.MAX_VALUE;
+//         int Smin = Integer.MAX_VALUE;
+
+//         for(int i :arr){
+//             if(i < min){
+//                 Smin = min;
+//                 min = i;
+//             }
+//             else if (i < Smin && i != min){
+//                 Smin = i;
+//             }
+//         }
+//         System.out.println("Second minimum is "+ Smin);
+//     }
+// }
+
+// Qn33. WAP to find third maximum number in array.
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {234,345,543,654,768,755,909};
+
+//         int max = Integer.MIN_VALUE;
+//         int Smax = Integer.MIN_VALUE;
+//         int Tmax = Integer.MIN_VALUE;
+
+//         for(int i:arr){
+//             if(i > max){
+//                 Tmax = Smax;
+//                 Smax = max;
+//                 max = i;
+//             }
+//             else if(i > Smax && i != max && Smax > Tmax && Smax != Tmax){
+//                 Smax = max;
+//                 Tmax = Smax;
+//             }
+//         }
+//         System.out.println("Third maximum is " + Tmax);
+//     }
+// }
+
+// Qn34. WAP to find the third minimum from the array
+
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {234,534,6544,6,4,6,4,56,4,4,4,98};
+        
+//         int min = Integer.MAX_VALUE;
+//         int Smin = Integer.MAX_VALUE;
+//         int Tmin = Integer.MAX_VALUE;
+
+//         for(int i:arr){
+//             if(i < min){
+//                 Tmin = Smin;
+//                 Smin = min;
+//                 min = i;
+//             }
+//             else if( i < Smin && i != min && Smin < Tmin && Smin != Tmin){
+//                 Smin = min;
+//                 Tmin = Smin;
+
+//             }
+//         }
+//         System.out.println("First minimum is " +min);
+//         System.out.println("Second minimum is " +Smin);
+//         System.out.println("Third minimum is " +Tmin);
+//     }
+// }
+
+// Qn35. WAP to reverse the array.
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {23,43,54,65,87,87,56};
+
+//         int i = arr.length-1;
+//         int j = 0;
+
+//         while(j < i){
+//             int temp = arr[i];
+//             arr[i] = arr[j]; 
+//             arr[j] = temp;
+//             i--;
+//             j++;
+//         }
+//         for(int k:arr){
+//             System.out.print(k + " ");
+//         }
+//     }
+// }

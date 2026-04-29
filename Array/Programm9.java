@@ -14,11 +14,16 @@ public class Programm9 {
                 Smax = max;
                 max = i;
             }
-            else if(i >Smax && i !=max && Smax > Tmax && Smax != Tmax){
-                Smax = max;
-                Tmax = Smax;
+            else if(i > Smax && i !=max){
+                Tmax =Smax;
+                Smax = i;
+            }
+            else if(i > Tmax && i != Smax && i != max){
+                Tmax = i;
             }
         }
-        System.out.println(Tmax);
+        System.out.println("Tnird max is " +Tmax);
+        System.out.println("Second max is " +Smax);
+        System.out.println("Max is " +max);
     }
 }

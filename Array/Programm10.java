@@ -14,11 +14,16 @@ public class Programm10 {
                 Smin = min;
                 min = i;
             }
-            else if(i < Smin && i != min && Smin < Tmin && Smin != Tmin){
-                Smin = min;
-                Tmin = Smin;
-            }
+           else if(i < Smin && i != min){
+            Tmin = Smin;
+            Smin = i;
+           }
+           else if(i < Tmin && i != Smin && i != min){
+            Tmin = i;
+           }
         }
         System.out.println("Third Minimum is "+ Tmin);
+        System.out.println("Second minimum is " +Smin);
+        System.out.println("Minimum is " +min);
     }
 }

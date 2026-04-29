@@ -1,0 +1,24 @@
+// WAP to reverse the array
+package Array;
+
+public class Programm11 {
+    public static void main(String[] args) {
+        int arr[] = {2,3,4,5,6,7,8,9};
+
+        // Intialize two variable i and j.
+
+        int i = arr.length-1;
+        int j = 0;
+
+        while(j <i){
+            int temp = arr[i];      //Store value of i in temp variable.
+            arr[i] = arr[j];        // Store value of j in i.
+            arr[j] = temp;          // Assign temp in j
+            i--;
+            j++;
+        }
+        for(int k:arr){
+            System.out.print(k+ " ");
+        }
+    }
+}
