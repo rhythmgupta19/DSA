@@ -749,3 +749,45 @@ import java.net.SocketTimeoutException;
 //         }
 //     }
 // }
+
+//Qn.36 WAP to check if an Array is sorted or not.
+
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {23,24,232,43,54,766,877};
+
+//         boolean isSorted = true;
+//         for(int i =1;i <arr.length;i++){
+//             if(arr[i] < arr[i-1]){
+//                 isSorted = false;
+//                 break;
+//             }
+//         }
+//         if(isSorted){
+//             System.out.println("Array is sorted ");
+//         }
+//         else{
+//             System.out.println("Array is not sorted ");
+//         }
+//     }
+// }
+
+// Find te frequency of the array
+
+public class Question{
+    public static void main(String[] args) {
+        int arr[] = {2,3,4,5,6,77,6,5,77,3};
+        int freq[] = new int[256];          // Size 256 because we are treating number as ASCII charchter.
+
+        for(int i:arr){
+            char ch =(char)i;           // 
+            freq[ch]++;
+        }
+        for(int i= 0;i <freq.length;i++){
+            if(freq[i] > 0){
+                System.out.println(i + " --> " + freq[i]);
+            }
+        }
+    }
+
+}

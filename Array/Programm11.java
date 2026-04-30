@@ -1,4 +1,4 @@
-// WAP to reverse the array
+// WAP to reverse the array (Two pointer approach)
 package Array;
 
 public class Programm11 {

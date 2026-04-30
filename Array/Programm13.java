@@ -1,20 +1,19 @@
-// WAP to calculate the frequency of the array means how many toimes a number is repeted
+// Find te frequency of the array
 package Array;
 
 public class Programm13 {
     public static void main(String[] args) {
-        int arr[] = {2,3,3,4,5,6,6,6,7,8,8,11,9,11};
+        int arr[] ={1,2,3,4,3,2,4,5,4,5,66,5,};
+        int freq[] = new int [256];         // Because we're treating numbers like ASCII characters
 
-        for (int i = 0; i < arr.length; i++) {
-            int count = 0;
-
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[i] == arr[j]) {
-                    count++;
-                }
+        for(int i :arr){
+            char ch = (char)i;      // Converts number into ASCII character
+            freq[ch]++;
+        }
+        for(int i = 0;i < freq.length;i++){
+            if(freq[i]>0){
+                System.out.println(i + " --> " +freq[i]);
             }
-
-            System.out.println(arr[i] + " -> " + count);
         }
     }
 }
