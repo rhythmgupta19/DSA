@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Programm17",
+            "request": "launch",
+            "mainClass": "Array.Programm17",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
             "name": "Programm16",
             "request": "launch",
             "mainClass": "Array.Programm16",

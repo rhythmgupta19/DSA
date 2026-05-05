@@ -1,4 +1,5 @@
     // WAP to check if an Array is sorted or not.
+    // This is for ascending order 
 package Array;
 
 public class Programm14 {
@@ -8,13 +9,13 @@ public class Programm14 {
         boolean isSorted = true;
 
         for(int i = 1; i < arr.length;i++){
-            if(arr[i] < arr[i-1]){      //Compare with previus one
-                isSorted = false;
+            if(arr[i] < arr[i+1]){              //Compare with next one
+                isSorted = true;
                 break;
             }
         }
         if(isSorted){
-            System.out.println("Array is sorted");
+            System.out.println("Array is sorted in acseding order");
         }
         else{
             System.out.println("Array is not sorted");
