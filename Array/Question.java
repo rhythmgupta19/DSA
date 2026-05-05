@@ -772,22 +772,121 @@ import java.net.SocketTimeoutException;
 //     }
 // }
 
-// Find te frequency of the array
+//Qn 37.  Find te frequency of the array
 
-public class Question{
-    public static void main(String[] args) {
-        int arr[] = {2,3,4,5,6,77,6,5,77,3};
-        int freq[] = new int[256];          // Size 256 because we are treating number as ASCII charchter.
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {2,3,4,5,6,77,6,5,77,3};
+//         int freq[] = new int[256];          // Size 256 because we are treating number as ASCII charchter.
 
-        for(int i:arr){
-            char ch =(char)i;           // 
-            freq[ch]++;
-        }
-        for(int i= 0;i <freq.length;i++){
-            if(freq[i] > 0){
-                System.out.println(i + " --> " + freq[i]);
-            }
-        }
-    }
+//         for(int i:arr){
+//             char ch =(char)i;           // 
+//             freq[ch]++;
+//         }
+//         for(int i= 0;i <freq.length;i++){
+//             if(freq[i] > 0){
+//                 System.out.println(i + " --> " + freq[i]);
+//             }
+//         }
+//     }
+// }
 
-}
+// Qn38. WAP To find 4th minimum element of the array
+
+// import java.util.Scanner;
+// public class Question{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner (System.in);
+//         System.out.println("Enter the size of an array");
+//         int size = sc.nextInt();
+
+//         int arr[] = new int[size];
+
+//         for(int i = 0;i < size;i++){
+//             System.out.println("Enter the elements: ");
+//             arr[i] = sc.nextInt();
+//         }
+//         int min= Integer.MAX_VALUE;
+//         int Smin = Integer.MAX_VALUE;
+//         int Tmin = Integer.MAX_VALUE;
+//         int Fmin = Integer.MAX_VALUE;
+
+//         for(int i :arr){
+//             if(i < min){
+//                 Fmin = Tmin;
+//                 Tmin = Smin;
+//                 Smin = min;
+//                 min = i;
+//             }
+//             else if(i<Smin && i != min){
+//                 Fmin = Tmin;
+//                 Tmin = Smin;
+//                 Smin = i;
+//             }
+//             else if( i < Tmin && i != Smin && i != min){
+//                 Fmin = Tmin;
+//                 Tmin = i;
+//             }
+//             else if(i < Fmin && i != Tmin && i != Smin && i != min){
+//                 Fmin = i;
+//             }
+//         }
+//         System.out.println("Min is "+ min);
+//         System.out.println("Second min is " + Smin);
+//         System.out.println("Third min is " + Tmin);
+//         System.out.println("Fourth min is " + Fmin);
+//     }
+// }
+
+// Qn 39. WAP to reverse the array (2 pointer approach).
+
+// import java.util.Scanner;
+// public class Question{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of an array");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         for(int i =0;i < size;i++){
+//             arr[i] = sc.nextInt();  
+//         }
+//         int i  = arr.length-1;
+//         int j = 0;
+//         while(i > j){
+//             int temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//             j++;
+//             i--;
+//         }
+//         for(int k:arr){
+//             System.out.print(k + " ");
+//         }
+//     }
+// }
+
+// Qn 40. WAP to calculate sum and average of an array.
+
+// import java.util.Scanner;
+// public class Question{
+//     public static void main(String[] args) {
+//         Scanner  sc = new Scanner(System.in);
+//         System.out.println("Enter the size of an array:");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+//         for(int i= 0;i <size;i++){
+//             System.out.println("Enter the elements:");
+//             arr[i] = sc.nextInt();
+//         }
+//         int count = 0;
+//         int sum = 0;
+//         for(int j:arr){
+//             sum += j;
+//             count++;
+//         }
+//         System.out.println("Sum is " +sum);
+//         System.out.println("Count is "+ count);
+//         float average = sum/count;
+//         System.out.println("Average is "+ average);
+//     }
+// }

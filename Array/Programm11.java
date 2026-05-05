@@ -1,4 +1,13 @@
 // WAP to reverse the array (Two pointer approach)
+// logic-->
+// create an array or take input.
+// intialize two pointer i & j.
+// iterate till i < j.
+// Store value of i in temp pounter
+// or store value of j in arr[i].
+// and store temp in arr[j].
+// then print elements.
+// end 
 package Array;
 
 public class Programm11 {

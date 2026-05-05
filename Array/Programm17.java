@@ -26,6 +26,7 @@ public class Programm17 {
         int sumA = 0;
         for(int i:arr){
             sumA += i;
+        sc.close();
         }
         System.out.println("missing " +(sum-sumA));
     }
