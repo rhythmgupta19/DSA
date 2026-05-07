@@ -1,6 +1,7 @@
 package Array;
 //Qn1. Create an integer array of size 5 and take input from the user.
 
+import java.lang.classfile.attribute.SourceIDAttribute;
 import java.lang.classfile.attribute.StackMapFrameInfo.VerificationTypeInfo;
 import java.net.SocketTimeoutException;
 
@@ -890,3 +891,99 @@ import java.net.SocketTimeoutException;
 //         System.out.println("Average is "+ average);
 //     }
 // }
+
+// Qn41.  Find the frequncy of the array.
+
+// import java.util.Scanner;
+// public class Question{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of an array:");
+//         int size = sc.nextInt();
+
+//         int arr[] = new int[size];
+
+//         for(int i = 0;i < size;i++){
+//             System.out.println("Enter the elements");
+//             arr[i] = sc.nextInt();
+//         }
+
+//         int freq[] = new int[256];
+
+//         for(int i: arr){
+//             char ch = (char)i;
+//             freq[ch]++;             //Go to index ch and increase its value by 1
+//         }
+//         for(int i = 0;i < freq.length;i++){
+//             if(freq[i] > 0){
+//                 System.out.println(i + " --> " + freq[i]);
+//             }
+//             sc.close();
+//         }
+//     }
+// }
+
+//Qn.42 Check if  array is sorted or not
+
+// import java.util.Scanner;
+// public class Question{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of an array:");
+//         int size = sc.nextInt();
+
+//         int arr[] = new int[size];
+
+//         for(int i = 0;i < size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         boolean isSorted = true;
+//         for(int i= 0;i <size;i++){
+//             if(arr[i] < arr[i+1]){
+//              isSorted = true;
+//              break;
+//             }
+//             if(isSorted){
+//                 System.out.println("Array is sorted");
+//             }
+//             else{
+//                 System.out.println("Array is not sorted");
+//             }
+//         }
+//     }
+// } 
+
+// Qn43. WAP to check an array are equal or not.?
+
+public class Question{
+    public static void main(String[] args) {
+        int arr1[] = {2,3,4,5,6,7,8};
+        int arr2[] = {2,3,4,5,6,7,8};
+
+        if(arr1.length != arr2.length){
+            System.out.println("Array is not equal");
+            return;
+        }
+        int freq[] = new int[256];
+        for(int i:arr1){
+            char ch = (char)i;
+            freq[ch]++;
+        }
+        for(int j:arr2){
+            char ch = (char)j;
+            freq[ch]--;
+        }
+        int c = 0;
+        for(int i:freq){
+            if(c != 0){
+                c++;
+            }
+        }
+        if(c != 0){
+            System.out.println("Array is  same");
+        }
+        else{
+            System.out.println("Array is not same");
+        }
+    }
+}
