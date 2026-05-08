@@ -5,6 +5,8 @@ import java.lang.classfile.attribute.SourceIDAttribute;
 import java.lang.classfile.attribute.StackMapFrameInfo.VerificationTypeInfo;
 import java.net.SocketTimeoutException;
 
+import javax.swing.SpringLayout;
+
 // import java.util.Scanner;
 // public class Questions {
 //     public static void main(String[] args){
@@ -955,35 +957,55 @@ import java.net.SocketTimeoutException;
 
 // Qn43. WAP to check an array are equal or not.?
 
-public class Question{
-    public static void main(String[] args) {
-        int arr1[] = {2,3,4,5,6,7,8};
-        int arr2[] = {2,3,4,5,6,7,8};
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr1[] = {2,3,4,5,6,7,8};
+//         int arr2[] = {2,3,4,5,6,7,8};
 
-        if(arr1.length != arr2.length){
-            System.out.println("Array is not equal");
-            return;
+//         if(arr1.length != arr2.length){
+//             System.out.println("Array is not equal");
+//             return;
+//         }
+//         int freq[] = new int[256];
+//         for(int i:arr1){
+//             char ch = (char)i;
+//             freq[ch]++;
+//         }
+//         for(int j:arr2){
+//             char ch = (char)j;
+//             freq[ch]--;
+//         }
+//         int c = 0;
+//         for(int i:freq){
+//             if(c != 0){
+//                 c++;
+//             }
+//         }
+//         if(c != 0){
+//             System.out.println("Array is  same");
+//         }
+//         else{
+//             System.out.println("Array is not same");
+//         }
+//     }
+// }
+
+public class Qiestion{
+    public static void main(String[] args) {
+        int arr [] = {23,45,676,765,5,4,6,7,8,990};
+
+        int i = arr.length-1;
+        int j = 0;
+
+        while(i < j){
+            int temp  = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            j++;
+            i--;
         }
-        int freq[] = new int[256];
-        for(int i:arr1){
-            char ch = (char)i;
-            freq[ch]++;
-        }
-        for(int j:arr2){
-            char ch = (char)j;
-            freq[ch]--;
-        }
-        int c = 0;
-        for(int i:freq){
-            if(c != 0){
-                c++;
-            }
-        }
-        if(c != 0){
-            System.out.println("Array is  same");
-        }
-        else{
-            System.out.println("Array is not same");
+        for(int k :arr){
+            System.out.print(k + " ");
         }
     }
-}
+}   
