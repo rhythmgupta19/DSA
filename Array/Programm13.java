@@ -1,6 +1,6 @@
 // WAP Find te frequency of the array
 
-//  create or take inpu of an array.
+//  create or take input of an array.
 // create an another array freq[] of size 256.
 // convert all values into ASCII value.
 // iterate an array till freq[i] > 0.

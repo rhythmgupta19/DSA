@@ -12,13 +12,13 @@ public class Programm19 {
                     max =j;
                 }
             }
-            int temp = arr[j];
+            int temp = arr[i];
             arr[i] = arr[max];
             arr[max] = temp;
-            }
-            for(int i:arr){
+            
+            for(int r:arr){
                 System.out.println(i + " ");
             }
         }
     }
-
+}

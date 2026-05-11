@@ -1,12 +1,6 @@
 package Array;
 //Qn1. Create an integer array of size 5 and take input from the user.
 
-import java.lang.classfile.attribute.SourceIDAttribute;
-import java.lang.classfile.attribute.StackMapFrameInfo.VerificationTypeInfo;
-import java.net.SocketTimeoutException;
-
-import javax.swing.SpringLayout;
-
 // import java.util.Scanner;
 // public class Questions {
 //     public static void main(String[] args){
@@ -990,22 +984,20 @@ import javax.swing.SpringLayout;
 //     }
 // }
 
-public class Qiestion{
+
+public class Question{
     public static void main(String[] args) {
-        int arr [] = {23,45,676,765,5,4,6,7,8,990};
+        int arr[]  = { 2,3,4,5,6,7,6,5,4,3,2,1,1};
+        int freq[] = new int[256];
 
-        int i = arr.length-1;
-        int j = 0;
-
-        while(i < j){
-            int temp  = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-            j++;
-            i--;
+        for(int i :arr){
+            char ch = (char)i;
+            freq[ch]++;
         }
-        for(int k :arr){
-            System.out.print(k + " ");
+        for(int i = 0;i < freq.length;i++){
+            if(freq[i]>0){
+                System.out.println(i + " -----> " + freq[i]);
+            }
         }
     }
-}   
+}
