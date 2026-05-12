@@ -1,4 +1,4 @@
-// WAP to check aray is same or not..
+// WAP to check aray is same or not....
 
 package Array;
 

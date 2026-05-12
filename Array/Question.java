@@ -984,20 +984,72 @@ package Array;
 //     }
 // }
 
+// WAP to claculate frequency of the given array 
 
+// import java.util.Scanner;
+// public class Question{
+//     public static void main(String[] args) {
+//         Scanner sc= new Scanner(System.in);
+//         System.out.println("Enter the size of an array");
+//         int size = sc.nextInt();
+
+//         int arr[] =new int[size];
+
+//         for(int i= 0;i < size;i++){
+//             System.out.println("Enter the element into array");
+//             arr[i] = sc.nextInt();
+//         }
+
+//         int freq[] = new int[256];
+
+//         for(int j :arr){
+//             char ch = (char)j;
+//             freq[ch]++;         // i now convert into ch
+//         }
+//         for(int j = 0;j < freq.length;j++){
+//             if(freq[j] > 0){
+//                 System.out.println(j + " ---> " + freq[j]);
+//             }
+//         }
+//     }
+// }
+
+// WAP to check that the array is sorted or not..
+
+import java.util.Scanner;
 public class Question{
     public static void main(String[] args) {
-        int arr[]  = { 2,3,4,5,6,7,6,5,4,3,2,1,1};
-        int freq[] = new int[256];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of an array");
+        int size = sc.nextInt();
 
-        for(int i :arr){
-            char ch = (char)i;
-            freq[ch]++;
+        int arr[] = new int[size];
+
+        for(int i = 0; i < size;i++){
+            arr[i] = sc.nextInt();
         }
-        for(int i = 0;i < freq.length;i++){
-            if(freq[i]>0){
-                System.out.println(i + " -----> " + freq[i]);
+
+        boolean ascending = true;
+        boolean descending = true;
+
+        for(int i:arr){
+            if(arr[i] > arr[i+1]){
+                ascending = false;
+                break;
             }
+            if(arr[i] < arr[i+1]){
+                descending = false;
+                break;
+            }
+        }
+        if(ascending){
+            System.out.println("Array is sorted in ascending order");
+        }
+        else if(descending){
+            System.out.println("Array is sortedin descending");
+        }
+        else{
+            System.out.println("Array is not sorted");
         }
     }
 }

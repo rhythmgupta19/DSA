@@ -1,45 +1,33 @@
     // WAP to check if an Array is sorted or not.
-    // This is for ascending order 
+    // array is sorted in assceding or descending.
 package Array;
 
-// public class Programm14 {
-//     public static void main(String[] args) {
-//         int arr[] = {23,34,45,56,67,78,89,99};
+public class Programm14 {
 
-//         boolean isSorted = true;
-
-//         for(int i = 1; i < arr.length;i++){
-//             if(arr[i] < arr[i+1]){              //Compare with next one
-//                 isSorted = true;
-//                 break;
-//             }
-//         }
-//         if(isSorted){
-//             System.out.println("Array is sorted in acseding order");
-//         }
-//         else{
-//             System.out.println("Array is not sorted");
-//         }
-//     }
-// }
-
-
-public class Programm14{
     public static void main(String[] args) {
-        int arr [] ={98,87,65,54,44,33,22,11};
-        boolean isSorted = true;
-        
-        for(int i = 0 ; i <arr.length;i++){
+        int arr[]  = {23,45,56,67,78,89};
+
+        boolean ascending = true;
+        boolean descending = true;
+
+        for(int i = 0;i < arr.length-1;i++){
             if(arr[i] > arr[i+1]){
-                isSorted = true; 
+                ascending = false;
+                break;
+            }
+            if(arr[i] < arr[i+1]){
+                descending =  false;
                 break;
             }
         }
-        if(isSorted){
-            System.out.println("Array is sorted in descending order");
+        if(ascending){
+            System.out.println("Array is sorted in asceding order");
         }
-        else{
-            System.out.println("Not Sorted");
+        else if(descending){
+            System.out.println("Array is sorted in desceding order");
+        }
+        else {
+            System.out.println("Array is not sorted");
         }
     }
 }
