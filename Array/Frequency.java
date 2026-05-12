@@ -8,7 +8,7 @@
 // end.
 package Array;
 
-public class Programm13 {
+public class Frequency {
     public static void main(String[] args) {
         int arr[] ={1,2,3,4,3,2,4,5,4,5,66,5,};
         int freq[] = new int [256];         // Because we're treating numbers like ASCII characters

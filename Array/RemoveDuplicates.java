@@ -1,5 +1,5 @@
-// WAP to remove duplicates from a sorted array
-// package Array;
+// WAP to remove duplicates from a sorted 
+package Array;
 
 public class RemoveDuplicates {
     public static void main(String[] args) {

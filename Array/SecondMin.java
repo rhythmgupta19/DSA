@@ -1,7 +1,7 @@
 // WAP to find the second minimum element from array.
 package Array;
 
-public class Programm8 {
+public class SecondMin {
     public static void main(String[] args) {
         int arr[] = {2,3,4,5,6,78,9};
         int min = Integer.MAX_VALUE;

@@ -1,7 +1,7 @@
 package Array;
 // Inn this programm we are taking input size,creating array;taking element input from user and print all element.
 import java.util.Scanner;
-public class programm1 {
+public class ArrayInput {
     public static void main(String[] args){
         // Taking size input from user.
         Scanner sc = new Scanner(System.in);

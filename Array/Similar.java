@@ -2,7 +2,7 @@
 
 package Array;
 
-public class Programm16 {
+public class Similar {
     public static void main(String[] args) {
         int arr1[] =  {2,5,6,7,8,9};
         int arr2[] = {2,5,6,7,8,9};  

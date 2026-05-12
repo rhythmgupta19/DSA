@@ -1,7 +1,7 @@
 // WAP to print the element of even index.
 package Array;
 import java.util.Scanner;
-public class Programm3 {
+public class EvenIndex{
     public static void main(String[] args) {
 
         // Taking size input from user.

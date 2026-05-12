@@ -1,7 +1,7 @@
 // Bubble sort
 
 package Array;
-public class Programm21 {
+public class BubbleSort {
     public static void main(String[] args) {
 
         int arr[] = { 2, 3, 4, 5, -5, -7 };

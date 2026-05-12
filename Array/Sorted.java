@@ -2,7 +2,7 @@
     // array is sorted in assceding or descending.
 package Array;
 
-public class Programm14 {
+public class Sorted {
 
     public static void main(String[] args) {
         int arr[]  = {23,45,56,67,78,89};

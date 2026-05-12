@@ -31,7 +31,7 @@ class Calc {
     }
 }
 
-public class Programm5 {
+public class EvenNuber {
 
     public static void main(String[] args) {
 

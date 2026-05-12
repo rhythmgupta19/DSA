@@ -1,7 +1,7 @@
 // WAP to find second max element from array
 // Max transfer its value to Smax in every itration
 package Array;
-public class Programm7 {
+public class SecondMax {
     public static void main(String[] args) {
         int arr[] = {2,4,5,8,9};
         int max = -2147483648;

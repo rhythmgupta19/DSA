@@ -2,7 +2,7 @@
 
 package Array;
 
-public class Programm18 {
+public class SelectionSort {
     
     // Method to perform selection sort
     static void selectionSort(int[] arr) {

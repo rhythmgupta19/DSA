@@ -1,7 +1,7 @@
 //WAP to take a character as a input inside array.
 package Array;
 import java.util.Scanner;
-public class Programm4 {
+public class CharArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of array");

@@ -1,7 +1,7 @@
 // WAP to find the third minimum element from the array.
 package Array;
 
-public class Programm10 {
+public class ThirdMin {
     public static void main(String[] args) {
         int arr[] = {12,34,45,56,67,78,98};
         int min = Integer.MAX_VALUE;

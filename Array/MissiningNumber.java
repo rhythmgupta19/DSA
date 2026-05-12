@@ -1,7 +1,7 @@
 //  WAP to find a mising number from 1 to n.
 package Array;
 import java.util.Scanner;
-public class Programm17 {
+public class MissiningNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the sixe of an array ");

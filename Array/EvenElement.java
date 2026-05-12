@@ -1,7 +1,7 @@
 //WAP to print even elemennt from the give input.
 package Array;
 import java.util.Scanner;
-public class Programm2{
+public class EvenElement{
     public static void main(String[] args){
 
         // Taking size input from user.
