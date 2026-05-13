@@ -1,4 +1,4 @@
-//  WAP to find a mising number from 1 to n.
+//  WAP to find a mising number btw 1 to n numbers.
 package Array;
 import java.util.Scanner;
 public class MissiningNumber {
@@ -21,11 +21,11 @@ public class MissiningNumber {
                 max = i;
             }
         }
-        int sum = (max*(max+1))/2;
+        int sum = (max*(max+1))/2;      // Sum of n numbers
 
         int sumA = 0;
         for(int i:arr){
-            sumA += i;
+            sumA += i;                  // Sum of an array
         sc.close();
         }
         System.out.println("missing " +(sum-sumA));

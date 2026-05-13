@@ -1016,40 +1016,97 @@ package Array;
 
 // WAP to check that the array is sorted or not..
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// public class Question{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of an array");
+//         int size = sc.nextInt();
+
+//         int arr[] = new int[size];
+
+//         for(int i = 0; i < size;i++){
+//             arr[i] = sc.nextInt();
+//             sc.close();
+//         }
+
+//         boolean ascending = true;
+//         boolean descending = true;
+
+//         for(int i:arr){
+//             if(arr[i] > arr[i+1]){
+//                 ascending = false;
+//                 break;
+//             }
+//             if(arr[i] < arr[i+1]){
+//                 descending = false;
+//                 break;
+//             }
+//         }
+//         if(ascending){
+//             System.out.println("Array is sorted in ascending order");
+//         }
+//         else if(descending){
+//             System.out.println("Array is sortedin descending");
+//         }
+//         else{
+//             System.out.println("Array is not sorted");
+//         }
+//     }
+// }
+
+// WAP to reverse array
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {23,45,67,89,29,87,65,43,2233};
+
+//         int  i = arr.length-1;
+//         int j = 0;
+
+//         while(j < i){
+//             int temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//             i--;
+//             j++;
+//         }
+//         for(int k :arr){
+//             System.out.print(k + " ");
+//         }
+//     }
+// }
+
+//  WAP to check array is same or not
+
 public class Question{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of an array");
-        int size = sc.nextInt();
+        int arr1[] = {23,45,56,67,78,89,98,44};
+        int arr2[] = {43,56,45,76,87,98,90,34};
 
-        int arr[] = new int[size];
-
-        for(int i = 0; i < size;i++){
-            arr[i] = sc.nextInt();
+        if(arr1.length != arr2.length){
+            System.out.println("Array is not same");
         }
+        int freq[] = new int[256];
 
-        boolean ascending = true;
-        boolean descending = true;
-
-        for(int i:arr){
-            if(arr[i] > arr[i+1]){
-                ascending = false;
-                break;
+        for(int i :arr1){
+            char ch1 =(char)i;
+            freq[ch1]++;
+        }
+        for(int j :arr2){
+            char ch2 = (char)j;
+            freq[ch2]--;
+        }
+        int c = 0;
+        for(int i :freq){
+            if(i != 0){
+                c++;
             }
-            if(arr[i] < arr[i+1]){
-                descending = false;
-                break;
-            }
         }
-        if(ascending){
-            System.out.println("Array is sorted in ascending order");
-        }
-        else if(descending){
-            System.out.println("Array is sortedin descending");
+        if(c != 0){
+            System.out.println("Array is not same");
         }
         else{
-            System.out.println("Array is not sorted");
+            System.out.println("Array is same");
         }
     }
 }

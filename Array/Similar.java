@@ -20,7 +20,7 @@ public class Similar {
                 char ch2 = (char)j;
                 freq[ch2]--;
             }
-            int c = 0;
+            int c = 0;          // c is the counter which count how many values inside the freq[] array is not zero
             for(int i:freq){
                 if(i !=0){
                     c++;
