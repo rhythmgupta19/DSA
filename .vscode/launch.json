@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "Array.SelectionSort",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
+            "name": "MissiningNumber",
+            "request": "launch",
+            "mainClass": "Array.MissiningNumber",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
             "name": "Similar",
             "request": "launch",
             "mainClass": "Array.Similar",

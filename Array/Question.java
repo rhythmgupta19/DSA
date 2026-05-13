@@ -1078,35 +1078,84 @@ package Array;
 
 //  WAP to check array is same or not
 
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr1[] = {23,45,56,67,78,89,98,44};
+//         int arr2[] = {43,56,45,76,87,98,90,34};
+
+//         if(arr1.length != arr2.length){
+//             System.out.println("Array is not same");
+//         }
+//         int freq[] = new int[256];
+
+//         for(int i :arr1){
+//             char ch1 =(char)i;
+//             freq[ch1]++;
+//         }
+//         for(int j :arr2){
+//             char ch2 = (char)j;
+//             freq[ch2]--;
+//         }
+//         int c = 0;
+//         for(int i :freq){
+//             if(i != 0){
+//                 c++;
+//             }
+//         }
+//         if(c != 0){
+//             System.out.println("Array is not same");
+//         }
+//         else{
+//             System.out.println("Array is same");
+//         }
+//     }
+// }
+
+// WAP to find misiing numbers btw 1 to n nums..
+
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5,7,8,9,10,11,12,13};
+
+//         int max = Integer.MIN_VALUE;
+//         for(int i :arr){
+//             if(i > max){
+//                 max = i;
+//             }
+//         }
+//         System.out.println("Max is " + max);
+//         int sum = (max*(max+1)/2);
+//         System.out.println("Sum is "+ sum);
+
+//         int sumA = 0;
+//         for(int i: arr){
+//             sumA += i;
+//         }
+//         System.out.println("Sum of array is " + sumA);
+//         System.out.println("Missing is " + (sum - sumA));
+//     }
+// }
+
+// Sort the array using selection sort.
 public class Question{
     public static void main(String[] args) {
-        int arr1[] = {23,45,56,67,78,89,98,44};
-        int arr2[] = {43,56,45,76,87,98,90,34};
+        int [] arr = {23,3,45,65,6,7,9,88,876,987,77,66,5443,};
 
-        if(arr1.length != arr2.length){
-            System.out.println("Array is not same");
-        }
-        int freq[] = new int[256];
-
-        for(int i :arr1){
-            char ch1 =(char)i;
-            freq[ch1]++;
-        }
-        for(int j :arr2){
-            char ch2 = (char)j;
-            freq[ch2]--;
-        }
-        int c = 0;
-        for(int i :freq){
-            if(i != 0){
-                c++;
+        for(int i = 0;i < arr.length;i++){
+            int max = i;
+            for(int j = i+1;j < arr.length;j++){
+                if(arr[j] > arr[max]){
+                    max = j;
+                }
             }
+
+            int temp = arr[i];
+            arr[i] = arr[max];
+            arr[max] = temp;
         }
-        if(c != 0){
-            System.out.println("Array is not same");
-        }
-        else{
-            System.out.println("Array is same");
+        System.out.println("Sorted array in descending order -->");
+        for(int i : arr){
+            System.out.print(i + " ");
         }
     }
 }
