@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Programm",
+            "request": "launch",
+            "mainClass": "Array.Programm",
+            "projectName": "DSA_3f80e974"
+        },
+        {
+            "type": "java",
             "name": "SelectionSort",
             "request": "launch",
             "mainClass": "Array.SelectionSort",

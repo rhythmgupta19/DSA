@@ -1137,25 +1137,44 @@ package Array;
 // }
 
 // Sort the array using selection sort.
+// public class Question{
+//     public static void main(String[] args) {
+//         int [] arr = {23,3,45,65,6,7,9,88,876,987,77,66,5443,};
+
+//         for(int i = 0;i < arr.length;i++){
+//             int max = i;
+//             for(int j = i+1;j < arr.length;j++){
+//                 if(arr[j] > arr[max]){
+//                     max = j;
+//                 }
+//             }
+
+//             int temp = arr[i];
+//             arr[i] = arr[max];
+//             arr[max] = temp;
+//         }
+//         System.out.println("Sorted array in descending order -->");
+//         for(int i : arr){
+//             System.out.print(i + " ");
+//         }
+//     }
+// }
+
+// Leetcode 
 public class Question{
     public static void main(String[] args) {
-        int [] arr = {23,3,45,65,6,7,9,88,876,987,77,66,5443,};
+        int arr[] = {-3,-2,-1,1,2,4,3};
+        int pos = 0;
+        int neg = 0;
 
-        for(int i = 0;i < arr.length;i++){
-            int max = i;
-            for(int j = i+1;j < arr.length;j++){
-                if(arr[j] > arr[max]){
-                    max = j;
-                }
+        for(int i :arr){
+            if(i > 0){
+                pos++;
             }
-
-            int temp = arr[i];
-            arr[i] = arr[max];
-            arr[max] = temp;
+            else if (i < 0){
+                neg++;
+            }
         }
-        System.out.println("Sorted array in descending order -->");
-        for(int i : arr){
-            System.out.print(i + " ");
-        }
+        System.out.println(Math.max(pos,neg));
     }
 }
