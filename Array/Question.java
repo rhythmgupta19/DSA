@@ -1161,20 +1161,70 @@ package Array;
 // }
 
 // Leetcode 
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {-3,-2,-1,1,2,4,3};
+//         int pos = 0;
+//         int neg = 0;
+
+//         for(int i :arr){
+//             if(i > 0){
+//                 pos++;
+//             }
+//             else if (i < 0){
+//                 neg++;
+//             }
+//         }
+//         System.out.println(Math.max(pos,neg));
+//     }
+// }
+
+// WAP for insertion sort
+// public class Question{
+//     public static void main(String[] args) {
+//         int arr[] = {21,34,54,65,98,76,56,43,56};
+
+//         for(int i = 1;i < arr.length;i++){
+//             int key = arr[i];
+
+//             int j = i-1;
+
+//             while(j >= 0 && arr[j] > key){
+//                 arr[j+1] = arr[j];
+//                 j--;
+//             }
+//             arr[j+1] = key;
+//         }
+//         System.out.println("Sorted array is -->");
+//         for(int k :arr){
+//             System.out.print(k + " ");
+//         }
+//     }
+// }
+
 public class Question{
     public static void main(String[] args) {
-        int arr[] = {-3,-2,-1,1,2,4,3};
-        int pos = 0;
-        int neg = 0;
+        int arr[] = {23,45,435,653,535,343,4,3,4538,465,65,236,47,5,4,32,2};
 
-        for(int i :arr){
-            if(i > 0){
-                pos++;
+        for(int i= 0;i < arr.length;i++){
+            boolean swapped = false;
+            for(int j =0;j<arr.length-1-i;j++){
+
+                if(arr[j] > arr[j+1]){
+
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+
+                    swapped = true;
+                }
             }
-            else if (i < 0){
-                neg++;
+            if(swapped = false){
+                break;
             }
         }
-        System.out.println(Math.max(pos,neg));
+        for(int r :arr){
+            System.out.print(r+ " ");
+        }
     }
 }
